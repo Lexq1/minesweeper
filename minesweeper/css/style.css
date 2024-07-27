@@ -1,0 +1,115 @@
+body{
+	--column: 10;
+	--width: 60px;
+	--height: 60px;
+}
+
+.settings{
+	display: flex;
+}
+
+.wrap-level-dangerous{
+	margin-top: 20px;
+	display: flex;	
+	/*gap: 100px;*/
+	align-items: center;
+	justify-content: space-between;
+   width: 555px;
+}
+
+.theme{
+	gap: 30px;
+}
+
+.wrap-level{
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wrap-count-bombs{
+	margin-top: 20px;	
+	display: flex;
+   align-items: center;
+}
+
+.number{
+	width: 50px;
+	margin-left: 10px;	
+}
+
+.count-bombs{
+	width: 250px;
+	margin-right: 10px;
+}
+
+.wrap-area{
+	position: relative;
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(var(--column), var(--width));
+	grid-template-rows: repeat(var(--column), var(--width));
+}
+
+.cell{
+	font-size: 30px;
+	background: #5091FB;
+}
+
+.wrap-game{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.new-game{
+	margin-left: 20px;
+	padding: 10px 30px;
+	background: #00f;
+	border: 1px solid #00f;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.new-game:hover{
+	cursor: pointer;
+	background: #209;
+}
+
+
+.timer{
+	margin-left: 10px;
+	background: #5091FB;
+	padding: 8px 27px;
+	border-radius: 5px;
+}
+
+.lock{
+	background: url('../img/flag.png') center center no-repeat;
+	background-size: 30px 30px;
+}
+
+.flags{
+	margin-left: 10px;
+}
+
+.bombs{
+	font-weight: bold;
+}
+
+:root {
+  --var-bgcolor: #fff;
+  --var-fontcolor: #000;
+}
+
+body {
+  background-color: var(--var-bgcolor);
+  color: var(--var-fontcolor);
+}
+
+.dark {
+  --var-bgcolor: #333;
+  --var-fontcolor: #eee;
+}
+
